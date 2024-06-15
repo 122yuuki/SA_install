@@ -17,17 +17,17 @@
 
 URLに飛ぶと、画像のような画面になるため、「***Sign up for free!***」をクリックする。
 
-<img width="250" src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_1-1.png">  
+<img width="250" src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_1-1.png">  
 
 次の画面に移動し、必要事項を入力して「***Sign up***」をクリックすることで、サインアップが完了する。
 
 ※メールアドレスは任意ではあるが、学校のアカウントを使用することをおすすめします。
 
-<img width="250" src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_1-2.png">
+<img width="250" src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_1-2.png">
 
 入力が完了すると、画像のような画面が出るが「***Skip***」をクリック。
 
-<img width="250" src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_1-3.png">
+<img width="250" src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_1-3.png">
 
 次の画面の「***got it***」をクリック。
 
@@ -35,7 +35,7 @@ URLに飛ぶと、画像のような画面になるため、「***Sign up for fr
 
 正常にサインアップが完了すると、画像のようなダッシュボード画面が表示される。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_1-5.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_1-5.png">
 
 ## ３．ngrokのインストール
 
@@ -47,7 +47,7 @@ URLに飛ぶと、画像のような画面になるため、「***Sign up for fr
 
 ３．「***Download for Windows(64-Bit)***」をクリックすることで、ファイルのダウンロードが開始される(数分で完了)。「***ngrok-v3-stable-windows-amd64***」のような名前のzipファイルがダウンロードされていることを確認する。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_2-1.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-1.png">
 
 ダウンロードされたzipファイルを解凍し、ファイル内にある「***ngrok.exe***」をクリックし起動させる。
 
@@ -55,7 +55,7 @@ URLに飛ぶと、画像のような画面になるため、「***Sign up for fr
 
 ngrokが起動できたら、以下の画像の赤枠のコマンドをコピーし、コピーしたコマンドをngrokでペーストする。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_2-2.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-2.png">
 
 実行すると、
 ```
@@ -70,7 +70,7 @@ ngrok http http://localhost:8080
 
 実行すると、以下の画像のようになることを確認する。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_2-3.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-3.png">
 
 
 ## ４．URL固定方法
@@ -83,8 +83,8 @@ ngrok http http://localhost:8080
 
 ４．「***Domain***」がコピーできるようになっているため、コピーをする。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_3-2.png">
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_3-3.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-2.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-3.png">
 
 ngrokで、以下のようにコマンドを入力する。
 ```
@@ -93,7 +93,7 @@ ngrok http --region=jp --domain=コピーしたドメイン 8080
 
 実行すると、以下の画像のようになることを確認する。
 
-<img src="https://github.com/122yuuki/git-practice/blob/master/SA_file/image_3-4.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-4.png">
 
 
 ## 補足
