@@ -47,47 +47,11 @@ ngrokのインストールはspring-boot側で行うため、インストール�
 
 2．画像のように、トークンについての情報が表示される。もし画像のような情報が表示されていなければ、新たにトークンを作成するとよい。
 
-3．様々な情報が書かれているが、「***ID***」をまずコピーする。
+3．様々な情報が書かれているが、「***ID***」をコピーする。
 
 4．コピーしたIDは今後使用するため、記録しておく。
 
-
-
-
-
-
-
-
-１．メニューバーの「***Setup & Installation***」をクリック。
-
-２．「1 Connect」の中に「***Installation***」がある。そのなかの「***Download***」をクリックする。すると、ファイルがダウンロードできるようになっている。
-
-３．「***Download for Windows(64-Bit)***」をクリックすることで、ファイルのダウンロードが開始される(数分で完了)。「***ngrok-v3-stable-windows-amd64***」のような名前のzipファイルがダウンロードされていることを確認する。
-
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-1.png">
-
-ダウンロードされたzipファイルを解凍し、ファイル内にある「***ngrok.exe***」をクリックし起動させる。
-
-正常起動できると、コマンドプロンプトのような画面が表示される。
-
-ngrokが起動できたら、以下の画像の赤枠のコマンドをコピーし、コピーしたコマンドをngrokでペーストする。
-
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-2.png">
-
-実行すると、
-```
-Authtoken saved to configuration file: 保存先
-```
-のようなメッセージが表示されることを確認する。
-
-ngrokで、以下のコマンドを入力する。
-```
-ngrok http http://localhost:8080
-```
-
-実行すると、以下の画像のようになることを確認する。
-
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-3.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-1.png">
 
 
 ## ４．domainについて
@@ -109,4 +73,7 @@ ngrok http http://localhost:8080
 
 メニューバーの「***Usage***」から、ngrokの使用状況や制限について確認することができる。
 
-無償版のngrokを利用しているが、1つのアカウントにつき1ヶ月あたりの使用量は決まっているため、注意するようにしてください。
+> [!caution]
+> 無償版のngrokを利用しているが、1つのアカウントにつき1ヶ月あたりの使用量は決まっているため、注意するようにしてください。
+
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-5.png">
