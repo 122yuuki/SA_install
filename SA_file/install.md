@@ -7,13 +7,13 @@
 
 - 簡単に説明すると、ローカルPC上で稼働しているネットワーク（TCP）サービスを外部公開できるサービスである。
 
-参考：https://qiita.com/mininobu/items/b45dbc70faedf30f484e
+参考：https://speakerdeck.com/gishi_yama/mild-web-sap06
 
 ## ２．準備
 
 以下のURLからngrokのアカウントをサインアップしてください。
 
--> https://dashboard.ngrok.com/login?state=8auND9VLdlsYOyjzFQ5igYc6nAy2ylcAaeJrn5Oq_NRXewK2PcDZfDP9gFMguOshE3N3oiBTTgH7C5YKi1ryHRq7JyQaZPjlJpl7WjVQq_6Yk--2CoAjBNbaX_BXzc9Tmi_8Y-N2zRBYxwq-Bj228f-Qg2I%3D
+-> https://dashboard.ngrok.com/login
 
 URLに飛ぶと、画像のような画面になるため、「***Sign up for free!***」をクリックする。
 
@@ -37,9 +37,26 @@ URLに飛ぶと、画像のような画面になるため、「***Sign up for fr
 
 <img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_1-5.png">
 
-## ３．ngrokのインストール
+## ３．authtokenについて
 
 サインアップが完了したときに表示される画面を操作する。
+
+ngrokのインストールはspring-boot側で行うため、インストール方法は割愛する。
+
+1．メニューバーの「***AuthTokens***」をクリックする。
+
+2．画像のように、トークンについての情報が表示される。もし画像のような情報が表示されていなければ、新たにトークンを作成するとよい。
+
+3．様々な情報が書かれているが、「***ID***」をまずコピーする。
+
+4．コピーしたIDは今後使用するため、記録しておく。
+
+
+
+
+
+
+
 
 １．メニューバーの「***Setup & Installation***」をクリック。
 
@@ -73,7 +90,7 @@ ngrok http http://localhost:8080
 <img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_2-3.png">
 
 
-## ４．URL固定方法
+## ４．domainについて
 
 １．メニューバーの「***Domains***」をクリックすると、画像のような画面になる。
 
@@ -83,27 +100,13 @@ ngrok http http://localhost:8080
 
 ４．「***Domain***」がコピーできるようになっているため、コピーをする。
 
+5．コピーしたものは今後使用するため、記録しておくように。
+
 <img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-2.png">
 <img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-3.png">
 
-ngrokで、以下のようにコマンドを入力する。
-```
-ngrok http --region=jp --domain=コピーしたドメイン 8080
-```
-
-実行すると、以下の画像のようになることを確認する。
-
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-4.png">
-
-
 ## 補足
 
-URLを固定しないときと固定したときの違いがあまりわからないと思う。
+メニューバーの「***Usage***」から、ngrokの使用状況や制限について確認することができる。
 
-「***Forwarding***」に書かれているURLを比較してみてほしい。
-```
-ngrok http http://localhost:8080
-```
-で何回か実行してURLを確認したとき、```.ngrok-free.app```の前の数字が毎回異なっていることが確認できる。
-
-一方で、ドメインを使用してポートをオンライン状態にしたときは、ドメインを使用しているので```.ngrok-free.app```の前の値が一定であることが確認できると思う。
+無償版のngrokを利用しているが、1つのアカウントにつき1ヶ月あたりの使用量は決まっているため、注意するようにしてください。
