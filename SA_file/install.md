@@ -51,7 +51,7 @@ ngrokのインストールはspring-boot側で行うため、インストール�
 
 4．コピーできるため、コピーしておく。コピーしたIDは今後使用するため、記録しておく。
 
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-1.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_token.png">
 
 
 ## ４．domainについて
@@ -66,8 +66,7 @@ ngrokのインストールはspring-boot側で行うため、インストール�
 
 5．コピーしたものは今後使用するため、記録しておくように。
 
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-2.png">
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-3.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_domain.png">
 
 ## 補足
 
@@ -76,4 +75,4 @@ ngrokのインストールはspring-boot側で行うため、インストール�
 > [!caution]
 > 無償版のngrokを利用しているが、1つのアカウントにつき1ヶ月あたりの使用量は決まっているため、注意するようにしてください。
 
-<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image_3-5.png">
+<img src="https://github.com/122yuuki/SA_install/blob/main/SA_file/image35.png">
